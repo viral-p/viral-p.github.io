@@ -1,9 +1,8 @@
 header{
-	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	font-size: 35px;
-	background-color:#404440;
-	color: #00FF00;
+	background-color:#eee;
+	color: #00d500;
 }
 header a{
 	color: #00d500;
@@ -15,39 +14,46 @@ nav {
 	background-color:#eee;
 	display: block;
 	white-space: nowrap;
+	padding-bottom: 5px;
 }
 nav a {	
-	font-family: "Ubuntu", sans-serif;
 	font-weight: 500;
 	font-size: 20px;
 	text-decoration: none;
-	color:#404440;
+	color:#060;
 	padding: 5px;
-	
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
-
-nav a:hover {
+a{
+	transition: text-decoration .25s ease-in-out;
+	transition: color .25s ease-in-out;
+	transition: background-color .50s ease-in-out;
+	transition: background .50s ease-in-out;
+}
+a:hover {
 	color: #0f0;
+	text-decoration: underline;
+	background-color: #777;
 }
-
 body{
-	width: 100%;
+	width: 98.5%;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 400;
 	background-color: #404440;
 }
-
 strong{
-	color: #0f0;
+	color: #080;
 	font-weight: 700;
 }
-.statement{
+index.statement, dt > a{
+	color: #060;
 	list-style-position: outside;
+	text-decoration: none;
 	font-weight: 500;
 	margin: 5px;
 	font-size: 17px;
 }
-
 .details{
 	list-style-position: outside;
 	font-weight: 300;
@@ -56,17 +62,36 @@ strong{
 }
 .content {
 	background-color: #eee;
+	color: #3C3C3C;
 	padding: 10px;
 }
 h3{
+	color: #060;
 	text-decoration: underline;
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 }
+h2{
+	color:#040;
+}
+.navImgs{
+	opacity: .6;
+	width: 48px;
+	height: 48px;
+	float:right;
+	padding: 10px 10px 10px 10px;
 
+	transition: opacity .25s ease-in-out;
+	transition: background-color: .25s ease-in-out;
+}
+.navImgs:hover{
+	background-color: #ddd;
+	opacity: 1;
+}
 .startToEnd {
 	float: right;
 	font-size: 15px;
 	font-style: oblique;
+	font-weight: 500;
 	color: #060;
 }
