@@ -1,0 +1,19 @@
+{
+  "name": "New folder",
+  "version": "0.0.0",
+  "authors": [
+    "Viral Patel <pviral0225@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4"
+  }
+}
