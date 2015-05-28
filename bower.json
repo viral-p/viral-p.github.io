@@ -1,0 +1,20 @@
+{
+  "name": "viral-p.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/viral-p/viral-p.github.io",
+  "authors": [
+    "Viral Patel <pviral0225@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements#~1.0.0"
+  }
+}
