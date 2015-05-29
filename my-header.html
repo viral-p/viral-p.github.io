@@ -20,8 +20,14 @@
             color: #FFF;
         }
         paper-tab a {
-            color: #FFF;
+            color: rgba(255,255,255, 0.7);
             text-decoration: none;
+            transition: color .25s ease-in-out;
+            transition: background-color .25s ease-in-out;
+        }
+        paper-tab a:hover {
+            color: rgba(255,255,255, 1.0);
+            background-color: #64DD17;
         }
     </style>
     <template>
