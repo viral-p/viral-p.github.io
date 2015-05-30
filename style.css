@@ -26,15 +26,11 @@ nav a {
 	border-top-right-radius: 12px;
 }
 a{
-	transition: text-decoration .25s ease-in-out;
+    text-decoration: none;
 	transition: color .25s ease-in-out;
-	transition: background-color .50s ease-in-out;
-	transition: background .50s ease-in-out;
 }
 a:hover {
 	color: #0f0;
-	text-decoration: underline;
-	background-color: #777;
 }
 body{
 /*    position: static;*/
