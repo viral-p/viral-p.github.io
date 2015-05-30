@@ -37,6 +37,7 @@ a:hover {
 	background-color: #777;
 }
 body{
+/*    position: static;*/
     padding: 0px;
     margin: 0px;
 	width: 100%;
@@ -66,7 +67,7 @@ index.statement, dt > a{
 	background-color: #eee;
 	color: #3C3C3C;
 	padding: 1% 5% 1% 5%;
-	margin:  1% 10% 1% 10%;
+	margin:  0% 10% 1% 10%;
 }
 h3{
 	color: #060;
@@ -77,24 +78,16 @@ h3{
 h2{
 	color:#040;
 }
-.navImgs{
-	opacity: .6;
-	width: 48px;
-	height: 48px;
-	float:right;
-	padding: 10px 10px 10px 10px;
-
-	transition: opacity .25s ease-in-out;
-	transition: background-color: .25s ease-in-out;
-}
-.navImgs:hover{
-	background-color: #ddd;
-	opacity: 1;
-}
 .startToEnd {
 	float: right;
 	font-size: 15px;
 	font-style: oblique;
 	font-weight: 500;
 	color: #060;
+}
+
+my-header{
+    font-family: "Ubuntu", sans-serif;
+    position: static;
+    height: 85px;
 }
