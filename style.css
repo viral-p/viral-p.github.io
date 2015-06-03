@@ -34,6 +34,7 @@ a:hover {
 }
 body{
 /*    position: static;*/
+    font-size: 100%;
     padding: 0px;
     margin: 0px;
 	width: 100%;
