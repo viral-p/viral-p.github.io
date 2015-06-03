@@ -61,9 +61,9 @@ index.statement, dt > a{
 	margin: 5px;
 }
 .content {
-	background-color: #eee;
+/*	background-color: #eee;*/
 	color: #3C3C3C;
-	padding: 1% 5% 1% 5%;
+	padding: 0% 5% 1% 5%;
 	margin:  0% 10% 1% 10%;
 }
 h3{
@@ -77,10 +77,10 @@ h2{
 }
 .startToEnd {
 	float: right;
-	font-size: 15px;
-	font-style: oblique;
-	font-weight: 500;
-	color: #060;
+	font-size: 0.9em;
+/*	font-style: oblique;*/
+	font-weight: 700;
+	color: #64DD17;
 }
 
 my-header{

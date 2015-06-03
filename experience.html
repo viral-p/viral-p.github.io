@@ -6,46 +6,45 @@
         <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
         <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
         <link rel="import" href="my-header.html">
+        <link rel="import" href="section-card.html">
         <link rel = "stylesheet" href="style.css">
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu: 400,500,700" rel="stylesheet" type="text/css">
 	</head>
     
 	<body>
-
         <my-header></my-header>
-		
 		<div class="content">
-			<section id="workExp">
-				<h2>Work Experience</h2>
-				<h3>Team President & Lead Programmer, FIRST Robotics Team 188
-					<span class="startToEnd">September 2011 - June 2014</span></h3>
-				<ul>
-					<li><strong>Dean’s List Semi Finalist</strong> for team leadership and community involvement </li>
-					<li>Used Java, in Netbeans, to program robot controls; achieved <strong>highest autonomous score </strong> at the World Championship 2014 </li>
-					<li>Worked closely with electrical team to arrange and wire the <strong>sensors, actuators, and pneumatics</strong></li>
-					<li>Assisted mechanical team with <strong>machining, manufacturing and assembly</strong></li>
-					<li>Worked under alumni in the industry, served as a point of contact between students and mentors</li>
-					<li>Effectively communicated team updates and plans to members </li>
-					<li>spoke with judges in the industry regarding <strong>robot design, programming, and the design process</strong></li>
-				</ul>
-				<h3>Quality Assurance Analyst, NexJ Systems
-					<span class="startToEnd">January 2015 - present</span></h3>
+            <section-card>
+                <h3>Team President & Lead Programmer, FIRST Robotics Team 188</h3>
+                <span class="startToEnd">September 2011 - June 2014</span>
+                <ul>
+                    <li><strong>Dean’s List Semi Finalist</strong> for team leadership and community involvement </li>
+                    <li>Used Java, in Netbeans, to program robot controls; achieved <strong>highest autonomous score </strong> at the World Championship 2014 </li>
+                    <li>Worked closely with electrical team to arrange and wire the <strong>sensors, actuators, and pneumatics</strong></li>
+                    <li>Assisted mechanical team with <strong>machining, manufacturing and assembly</strong></li>
+                    <li>Worked under alumni in the industry, served as a point of contact between students and mentors</li>
+                    <li>Effectively communicated team updates and plans to members </li>
+                    <li>spoke with judges in the industry regarding <strong>robot design, programming, and the design process</strong></li>
+                </ul>
+            </section-card>
+            <section-card>
+                <h3>Quality Assurance Analyst, NexJ Systems</h3>
+                <span class="startToEnd">January 2015 - present</span>
                 <ul>
                     <li>Worked in an agile scrum team that built new features for a CRM application </li>
                     <li>Tested new features, verified bug fixes, ran regression tests on new releases </li>
                     <li>Used issue tracker JIRA and Microsoft Office to complete tasks </li>
                 </ul>
-			</section>
-			<hr>
-			<section id="volExp">
-				<h2>Volunteer Experience</h2>
-				<h3>Event Volunteer/Field Referee, FIRST Lego League TDSB East <span class="startToEnd">December 2011, 2013</span></h3>
-				<ul>
-					<li>Recorded scores for matches using MS Excel </li>
-					<li>Refereed matches from 10am to 5pm </li>
-					<li>Informed students, mentors and supervisors about match schedules and game rules</li>
-				</ul>
-			</section>
+            </section-card>
+            <section-card>
+                <h3>Event Volunteer/Field Referee, FIRST Lego League TDSB East</h3>
+                <span class="startToEnd">December 2011 - present</span>
+                <ul>
+                    <li>Recorded scores for matches using MS Excel </li>
+                    <li>Refereed matches from 10am to 5pm </li>
+                    <li>Informed students, mentors and supervisors about match schedules and game rules</li>
+                </ul>
+            </section-card>
 		</div>
 	</body>
 </html>

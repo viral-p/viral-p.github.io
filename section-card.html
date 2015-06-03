@@ -6,31 +6,36 @@
         .this-card{
             font-size: 100%;
             position: static;
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
         }
         .section-header > ::content h3{
             position: static;
             text-align: left;
             color: #fff;
             background-color: #2E7D32;
-            font-size: 1.7em;
+            font-size: 1.6em;
             font-weight: 400;
             text-decoration: none;
             padding: 1.0% 2.0%;
         }
-        .section-content > ::content{
+        .section-content{
             position: static;
             background-color: whitesmoke;
             text-align: left;
             color: rgba(0,0,0, 0.85);
             font-size: 1em;
+            padding: 1.0% 2.5%;
         }
+/*
         .section-content > ::content p{
             position: static;
             text-align: left;
             font-size: 1em;
-            padding: 1.5% 2.5%;
+
             margin: 0% 1% 1.5%;
         }
+*/
     </style>
     <template>
         <div class="this-card">
@@ -38,7 +43,7 @@
                 <content select="h3"></content>
             </div>
             <div class="section-content">
-                <content select="p"></content>
+                <content></content>
             </div>
         </div>
     </template>
