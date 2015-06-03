@@ -64,7 +64,7 @@ index.statement, dt > a{
 /*	background-color: #eee;*/
 	color: #3C3C3C;
 	padding: 0% 5% 1% 5%;
-	margin:  0% 10% 1% 10%;
+	margin:  0% 5% 1% 5%;
 }
 h3{
 	color: #060;
@@ -78,7 +78,6 @@ h2{
 .startToEnd {
 	float: right;
 	font-size: 0.9em;
-/*	font-style: oblique;*/
 	font-weight: 700;
 	color: #64DD17;
 }
