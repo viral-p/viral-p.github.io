@@ -1,12 +1,21 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 <dom-module id="image-gallery">
   <!-- scoped CSS for this element -->
-  <style>
+  	<style>
+  		.IMAGE > ::content ul{
+  			list-style-type: none;
+  		}
+  		.IMAGE > ::content img{
+  			height: 95%;
+  			width: 95%;
+  		}
 	</style>
 	<template>
-		<button type="button" onclick="{{scrollBackward}}"></button>
-		<img src="{{currentImage}}">
-		<button type="button" onclick="{{scrollForward}}"></button>
+		<div id="click-for-next-image" on-click="scrollForward"></div>
+		<<div class="IMAGE">
+			<content></content>
+		</div>
+		<div id="click-for-past-image" on-click="scrollForward"></div>
 	</template>
 </dom-module>
 
@@ -14,27 +23,42 @@
   Polymer({
     is: "image-gallery",
 	properties:{
-		pathsToImages: Array,
-		current: 0,
-		currentImage: {
+		current: {
+			type: Number,
+			observer: 'currentChanged'
+		},
+		imgWidth:{
 			type: String,
-			value: pathsToImages[0]
+			value: '250px'
+		},
+		imgHeight:{
+			type: String,
+			value: '250px'
 		}
-	}
-	currentChanged: function {
-		currentImage = pathsToImages[current];
-	}
-	scrollForward: function{
-		current++;
-		if (current >=pathsToImages.length){
-			current = pathsToImages.length-1;
+	},
+	ready: function(){
+		this.current = 0;
+	},
+	currentChanged: function(newValue, oldValue) {
+		
+	},
+	scrollForward: function() {
+		if (this.current != this.images.length-1){
+			this.current++;
 		}
-	}
-	scrollBackward: function{
-		current--;
-		if (current <= 0){
-			current = 0;
+		else{
+			this.current = 0;
 		}
+	},
+	scrollBackward: function() {
+		if (this.current > 0){
+			this.current--;
+		}
+		else{
+			this.current = this.images.length-1;
+		}
+	},
+	ready: function(){
 	}
   });
 </script>
