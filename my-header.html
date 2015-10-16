@@ -1,8 +1,7 @@
-<link rel="import"
-      href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
 <dom-module id="my-header">
-  <!-- scoped CSS for this element -->
+    <!-- scoped CSS for this element -->
     <style>
         :host {
             position: absolute;
@@ -11,7 +10,7 @@
             box-sizing: border-box;
             font-size: 100%;
         }
-        paper-tabs{
+        /*paper-tabs{
             width: 100%;
             position: static;
             background-color: #4CAF50;
@@ -30,14 +29,41 @@
         }
         paper-tab{
             --paper-tab-ink: #64DD17;
+        }*/
+        
+        #links {
+            width: 100%;
+            position: static;
+            background-color: #4CAF50;
+            color: #FFF;
         }
-        #pageHeading{
+        
+        .link {
+            width: 25%;
+            display: inline-block;
+            position: static;
+        }
+        
+        a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color .25s ease-in-out;
+            /*transition: background-color .25s ease-in-out;*/
+            font-size: 1.2em;
+        }
+        
+        a:hover {
+            color: rgba(255, 255, 255, 1.0);
+            /*background-color: #81C784;*/
+        }
+        
+        #pageHeading {
             font-size: 2.3em;
             display: inline-block;
-            float: left;
             padding: 5px 10px 5px 10px;
         }
-        .navImgs{
+        
+        .navImgs {
             opacity: .6;
             width: 30px;
             height: 30px;
@@ -45,13 +71,15 @@
             padding: 5px 5px 5px 5px;
             margin: 5px 0px 5px 0px;
             transition: opacity .25s ease-in-out;
-            transition: background-color: .25s ease-in-out;
+            transition: background-color .25s ease-in-out;
         }
-        .navImgs:hover{
+        
+        .navImgs:hover {
             background-color: #81C784;
             opacity: 1;
         }
-        #top{
+        
+        #top {
             position: static;
             background-color: #C8E6C9;
             color: #1B5E20;
@@ -60,36 +88,30 @@
             margin-left: 10%;
             margin-right: 10%;
         }
-        .smallerLetters{
+        
+        .smallerLetters {
             font-size: 0.8em;
         }
     </style>
     <template>
-        <div id = "top">
+        <div id="top">
             <div id="pageHeading">V<span class="smallerLetters">IRAL</span> P<span class="smallerLetters">ATEL</span></div>
-            <a href="Resume.pdf" target="_blank"><img class="navImgs" src="images/icons/document_icon.svg" alt = "resume"></a>
-            <a href="http://www.github.com/viral-p" target="_blank"><img class="navImgs" src="images/icons/github_icon.svg" alt= "git"></a>
-            <a href="http://www.linkedin.com/pub/viral-patel/95/b4/a8a" target="_blank"><img class="navImgs" src="images/icons/linkedin_icon.svg" alt= "linkedin "></a>
+            <a href="Resume.pdf" target="_blank"><img class="navImgs" src="images/icons/document_icon.svg" alt="resume"></a>
+            <a href="http://www.github.com/viral-p" target="_blank"><img class="navImgs" src="images/icons/github_icon.svg" alt="git"></a>
+            <a href="http://www.linkedin.com/pub/viral-patel/95/b4/a8a" target="_blank"><img class="navImgs" src="images/icons/linkedin_icon.svg" alt="linkedin "></a>
         </div>
-        <paper-tabs>
-            <paper-tab link>
-                <a href="index.html" class="horizontal center-center layout">ABOUT</a>
-            </paper-tab>
-            <paper-tab link>
-                <a href="skills.html" class="horizontal center-center layout">SKILLS</a>
-            </paper-tab>
-            <paper-tab link>
-                <a href="experience.html" class="horizontal center-center layout">EXPERIENCE</a>
-            </paper-tab>
-            <paper-tab link>
-                <a href="projects.html" class="horizontal center-center layout">PROJECTS</a>
-            </paper-tab>
-        </paper-tabs>
+        <div id="links">
+            <div class="link"><a href="index.html">ABOUT</a></div>
+            <div class="link"><a href="skills.html">SKILLS</a></div>
+            <div class="link"><a href="experience.html">EXPERIENCE</a></div>
+            <div class="link"><a href="projects.html">PROJECTS</a></div>
+        </div>
     </template>
 </dom-module>
 
 <script>
-  Polymer({
+    Polymer({
     is: "my-header",
   });
+
 </script>
