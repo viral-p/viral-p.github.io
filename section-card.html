@@ -8,24 +8,27 @@
             position: static;
             margin-top: 2.5%;
             margin-bottom: 2.5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            z-index: 3;
         }
-        .section-header > ::content h3{
+        .section-header > ::content h4{
             position: static;
             text-align: left;
             color: #fff;
             background-color: #4CAF50;
-            font-size: 1.3em;
-            font-weight: 400;
             text-decoration: none;
             padding: 1.0% 2.0%;
             border-top-left-radius: 2px;
             border-top-right-radius: 2px;
+            margin: 0;
         }
         .section-content{
             position: static;
-            background-color: whitesmoke;
+            background-color: #333;
             text-align: left;
-            color: rgba(0,0,0, 0.85);
+            color: rgba(256, 256, 256, 0.8);
             font-size: 1em;
             padding: 1.0% 2.5%;
             border-bottom-left-radius: 2px;
@@ -37,6 +40,11 @@
             font-size: 0.9em;
             font-weight: 700;
             color: #64DD17;
+        }
+
+        .section-content > ::content a{
+            color: #0f0;
+            text-decoration: none;
         }
 
 /*
@@ -52,7 +60,7 @@
     <template>
         <div class="this-card">
             <div class="section-header" layout horizontal center>
-                <content select="h3"></content>
+                <content select="h4"></content>
             </div>
             <div class="section-content">
                 <content select = ".startToEnd"></content>

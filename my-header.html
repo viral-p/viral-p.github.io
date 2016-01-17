@@ -1,122 +1,44 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
-<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
 <dom-module id="my-header">
     <!-- scoped CSS for this element -->
     <style>
-        :host {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            font-size: 100%;
-        }
-        /*paper-tabs{
-            width: 100%;
-            position: static;
-            background-color: #4CAF50;
-            color: #FFF;
-        }
-        paper-tab a {
-            color: rgba(255,255,255, 0.7);
-            text-decoration: none;
-            transition: color .25s ease-in-out;
-            transition: background-color .25s ease-in-out;
-            font-size: 1.2em;
-        }
-        paper-tab a:hover {
-            color: rgba(255,255,255, 1.0);
-            background-color: #81C784;
-        }
-        paper-tab{
-            --paper-tab-ink: #64DD17;
-        }*/
-        
-        #links {
-            width: 100%;
-            position: static;
-            background-color: #4CAF50;
-            color: #FFF;
-        }
-        
-        .link {
-            width: 20%;
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 1.25%;
-            padding-top: 1.25%;
-            display: inline-block;
-            position: static;
-            text-align: center;
-        }
-        
-        a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color .25s ease-in-out;
-            /*transition: background-color .25s ease-in-out;*/
-            font-size: 1.2em;
-        }
-        
-        a:hover {
-            color: rgba(255, 255, 255, 1.0);
-            /*background-color: #81C784;*/
-        }
-        
-        #pageHeading {
-            font-size: 2.3em;
-            display: inline-block;
-            padding: 5px 10px 5px 10px;
-        }
-        
-        .navImgs {
-            opacity: .6;
-            width: 30px;
-            height: 30px;
-            float: right;
-            padding: 5px 5px 5px 5px;
-            margin: 5px 0px 5px 0px;
-            transition: opacity .25s ease-in-out;
-            transition: background-color .25s ease-in-out;
-        }
-        
-        .navImgs:hover {
-            background-color: #81C784;
-            opacity: 1;
-        }
-        
-        #top {
-            position: static;
-            background-color: #C8E6C9;
-            color: #1B5E20;
-            width: 80%;
-            height: 55px;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        
-        .smallerLetters {
-            font-size: 0.8em;
-        }
+    
     </style>
     <template>
-        <div id="top">
-            <div id="pageHeading">V<span class="smallerLetters">IRAL</span> P<span class="smallerLetters">ATEL</span></div>
-            <a href="Resume.pdf" target="_blank"><img class="navImgs" src="images/icons/document_icon.svg" alt="resume"></a>
-            <a href="http://www.github.com/viral-p" target="_blank"><img class="navImgs" src="images/icons/github_icon.svg" alt="git"></a>
-            <a href="http://www.linkedin.com/pub/viral-patel/95/b4/a8a" target="_blank"><img class="navImgs" src="images/icons/linkedin_icon.svg" alt="linkedin "></a>
-        </div>
-        <div id="links">
-            <a class="link" href="index.html">ABOUT</a>
-            <a class="link" href="skills.html">SKILLS</a>
-            <a class="link" href="experience.html">EXPERIENCE</a>
-            <a class="link" href="projects.html">PROJECTS</a>
+        <header class="mdl-layout__header mdl-layout__header--fixed">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">VIRAL PATEL</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="index.html">ABOUT</a>
+                    <a class="mdl-navigation__link" href="skills.html">SKILLS</a>
+                    <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
+                    <a class="mdl-navigation__link" href="experience.html">EXPERIENCE</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">VIRAL PATEL</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index.html">ABOUT</a>
+                <a class="mdl-navigation__link" href="skills.html">SKILLS</a>
+                <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
+                <a class="mdl-navigation__link" href="experience.html">EXPERIENCE</a>
+            </nav>
         </div>
     </template>
 </dom-module>
 
 <script>
     Polymer({
-    is: "my-header",
+    "is": "my-header",
+    properties: {
+        // declare the owner property
+        webpageTitle: {
+          type: String,
+          value: "VIRAL PATEL"
+        }
+      }
   });
 
 </script>

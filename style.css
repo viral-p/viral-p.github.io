@@ -1,83 +1,32 @@
-header{
-	font-weight: 400;
-	font-size: 35px;
-	background-color:#eee;
-	color: #00d500;
-}
-header a{
-	color: #00d500;
-	text-decoration: none;
-}
-nav {
-	width: 100%;
-	font-weight: bold;
-	background-color:#eee;
-	display: block;
-	white-space: nowrap;
-	padding-bottom: 5px;
-}
-nav a {	
-	font-weight: 500;
-	font-size: 20px;
-	text-decoration: none;
-	color:#060;
-	padding: 5px;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-}
-a{
-    text-decoration: none;
-	transition: color .25s ease-in-out;
-}
-a:hover {
-	color: #0f0;
-}
-body{
-/*    position: static;*/
-    font-size: 100%;
-    padding: 0px;
-    margin: 0px;
-	width: 100%;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 400;
-	background-color: #404440;
-}
-strong{
-	color: #080;
-	font-weight: 700;
-}
 index.statement, dt > a{
-	color: #060;
-	list-style-position: outside;
-	text-decoration: none;
-	font-weight: 500;
-	margin: 5px;
-	font-size: 17px;
+  color: #0f0;
+  list-style-position: outside;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px;
 }
 .details{
-	list-style-position: outside;
-	font-weight: 300;
-	font-size: 15px;
-	margin: 5px;
+  list-style-position: outside;
+  font-weight: 300;
+  margin: 5px;
 }
-.content {
-/*	background-color: #eee;*/
-	color: #3C3C3C;
-	padding: 0% 5% 1% 5%;
-	margin:  0% 5% 1% 5%;
-}
-h3{
-	color: #060;
-	text-decoration: underline;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-}
-h2{
-	color:#040;
+.mdl-layout__content{
+  background-color: white;
 }
 
-my-header{
-    font-family: "Ubuntu", sans-serif;
-    position: static;
-    height: 85px;
+@media screen and (max-width: 1024px) {
+    .mdl-layout__drawer-button {
+        margin: 4px;
+        color: #FFF;
+        border-color: #FFF;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 8px;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .mdl-layout__drawer-button > .material-icons{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 }
