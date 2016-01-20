@@ -14,19 +14,6 @@ index.statement, dt > a{
   background-color: white;
 }
 
-@media screen and (max-width: 1024px) {
-    .mdl-layout__drawer-button {
-        margin: 4px;
-        color: #FFF;
-        border-color: #FFF;
-        border-style: solid;
-        border-width: thin;
-        border-radius: 8px;
-        background-color: rgba(0,0,0,0.8);
-    }
-
-    .mdl-layout__drawer-button > .material-icons{
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
+h6{
+  font-style: bold;
 }
