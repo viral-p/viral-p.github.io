@@ -1,44 +1,6 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
-<dom-module id="my-header">
-    <!-- scoped CSS for this element -->
-    <style>
-    
-    </style>
-    <template>
-        <header class="mdl-layout__header mdl-layout__header--fixed">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">VIRAL PATEL</span>
-                <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="index.html">ABOUT</a>
-                    <a class="mdl-navigation__link" href="skills.html">SKILLS</a>
-                    <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
-                    <a class="mdl-navigation__link" href="experience.html">EXPERIENCE</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">VIRAL PATEL</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="index.html">ABOUT</a>
-                <a class="mdl-navigation__link" href="skills.html">SKILLS</a>
-                <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
-                <a class="mdl-navigation__link" href="experience.html">EXPERIENCE</a>
-            </nav>
-        </div>
-    </template>
-</dom-module>
-
-<script>
-    Polymer({
-    "is": "my-header",
-    properties: {
-        // declare the owner property
-        webpageTitle: {
-          type: String,
-          value: "VIRAL PATEL"
-        }
-      }
-  });
-
-</script>
+<div class="my-header">
+    <a class="mdl-navigation__link" href="index.html">ABOUT</a>
+    <a class="mdl-navigation__link" href="skills.html">SKILLS</a>
+    <a class="mdl-navigation__link" href="projects.html">PROJECTS</a>
+    <a class="mdl-navigation__link" href="experience.html">EXPERIENCE</a>
+</div>
