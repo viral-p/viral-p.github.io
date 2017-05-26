@@ -50,21 +50,18 @@
     };
 
     experience_menu.onclick = function(e) {
-        e.preventDefault();
         experience.hidden = false;
         projects.hidden = true;
         about.hidden = true;
     };
 
     projects_menu.onclick = function(e) {
-        e.preventDefault();
         experience.hidden = true;
         projects.hidden = false;
         about.hidden = true;
     };
 
     about_menu.onclick = function(e) {
-        e.preventDefault();
         experience.hidden = true;
         projects.hidden = true;
         about.hidden = false;

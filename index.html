@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/layouts/side-menu.css">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
 <body>
@@ -26,9 +27,9 @@
 
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item"><img id="my-face" class="pure-img-responsive" src="images/profile.jpg" alt="my face"></li>
-                    <li class="pure-menu-item" id="projects-menu"><a href="#" class="pure-menu-link">Projects</a></li>
-                    <li class="pure-menu-item" id="experience-menu" class="menu-item-divided pure-menu-selected"><a href="#" class="pure-menu-link">Experience</a></li>
-                    <li class="pure-menu-item" id="about-menu"><a href="#" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item" id="projects-menu"><a href="#main" class="pure-menu-link">PROJECTS</a></li>
+                    <li class="pure-menu-item" id="experience-menu" class="menu-item-divided pure-menu-selected"><a href="#main" class="pure-menu-link">EXPERIENCE</a></li>
+                    <li class="pure-menu-item" id="about-menu"><a href="#main" class="pure-menu-link">ABOUT</a></li>
                 </ul>
             </div>
         </div>
@@ -40,8 +41,32 @@
             </div>
 
             <div class="content">
-                <div id="projects">
-                    <h2>PROJECTS</h2>
+                <div id="projects" hidden>
+                    <h2>Projects</h2>
+                    <h3>Attenborough | FRC Team 3683 STEAMworks Robot</h3>
+                    <ul>
+                        <li>Winner of Tesla Division at FRC World Championship St Louis</li>
+                        <li>Capable of 9 ft/s low gear, 18 ft/s high gear, under 6s climb</li>
+                        <li>Control Systems Lead Mentor - Software + Electrical</li>
+                        <li>automated gear ejection implemented with IR break beam sensors</li>
+                        <li>Motion Control - Encoders for distance an gyroscope for heading coupled with algorithm to follow a path planned as a Bezier Curve</li>
+                    </ul>
+                    <div class="pure-g">
+                        <div class="pure-u-7-24">
+                            <img src="images/projects/Attenborough/1.jpg" alt="" class="pure-img-responsive">
+                        </div>
+                        <div class="pure-u-5-12">
+                            <img src="images/projects/Attenborough/4.jpg" alt="" class="pure-img-responsive">
+                        </div>
+                        <div class="pure-u-7-24">
+                            <img src="images/projects/Attenborough/5.jpg" alt="" class="pure-img-responsive">
+                        </div>
+                    </div>
+                    <h3>Synthesizer | SYDE 361 Course Project</h3>
+                    <ul>
+                        <li>design instrumental interface for specific user persona</li>
+                        <li>design and construct electrical, mechanical, and software components of electrical synthesizer</li>
+                    </ul>
                     <h3>Arduino Piano</h3>
                     <ul>
                         <li>Arduino project</li>
@@ -49,10 +74,10 @@
                         <li>multiple interrupts, multiple timers, custom millis() function</li>
                     </ul>
                     <div class="pure-g">
-                        <div class="pure-u-5-12">
+                        <div class="pure-u-11-24">
                             <img src="images\projects\arduinoPiano\IMG_20150721_154946.jpg" alt="" class="pure-img-responsive">
                         </div>
-                        <div class="pure-u-7-12">
+                        <div class="pure-u-13-24">
                             <video controls>
                                 <source src="images/projects/arduinoPiano/arduinoPiano.mp4" type="video/mp4">
                             </video>
@@ -128,9 +153,25 @@
                         <li>Designed prototypes of a model F1 car using 3D CAD software (ProDesktop 8.0 by PTC)</li>
                         <li>Documented design process and presented to class on large display board</li>
                     </ul>
+                    <div class="pure-g">
+                        <div class="pure-u-13-24">
+                            <img src="images/projects/F1inSchools/1.jpg" alt="" class="pure-img-responsive">
+                        </div>
+                        <div class="pure-u-11-24">
+                            <img src="images/projects/F1inSchools/3.jpg" alt="" class="pure-img-responsive">
+                        </div>
+                    </div>
                 </div>
-                <div id="experience" hidden>
+                <div id="experience">
                     <h2>Experience</h2>
+                    <h3>Control Systems Lead Mentor | FRC Team 3683</h3>
+                    <ul>
+                        <li>Winner of Tesla Division at FRC World Championship St Louis</li>
+                        <li>Lead and teach all aspects of FRC control system, including software (control theory) and electrical</li>
+                        <li>Designed mechanical and sensor based prototypes for automated mechanisms</li>
+                        <li>Testing and implementing motion control with different sensors and PID control loops</li>
+                    </ul>
+
                     <h3>Controls and Automation Software Developer | Ontario Die International</h3>
                     <ul>
                         <li>Independently led stamping automation project through design, implementation, and testing on machines and users</li>
