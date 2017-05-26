@@ -1,5 +1,5 @@
-body {
-    font-family: Open Sans;
+*/body {
+    font-family: "Open Sans";
 }
 
 video {
@@ -8,22 +8,23 @@ video {
     max-height: 500px;
 }
 
-#projects {
-    transition: opacity 600ms, visibility 600ms;
-}
-
-#about {
-    transition: opacity 600ms, visibility 600ms;
-}
-
-#experience {
-    transition: opacity 600ms, visibility 600ms;
-}
-
-h3 {
+.job_title {
     border-top: 2px solid green;
 }
 
 body {
-    background-color: #eee;
+    background-color: #f4f4f4;
+}
+
+.job>div>div>img {
+    /*margin-top: 30%;*/
+}
+
+ul {
+    margin: 0 0 0 0;
+}
+
+.date {
+    font-size: .75em;
+    font-style: oblique;
 }
