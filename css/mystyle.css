@@ -8,7 +8,7 @@ video {
     max-height: 500px;
 }
 
-.job_title {
+h3 {
     border-top: 2px solid green;
 }
 
